@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Map terrain cells: forest, water, stone in a varied pattern -->
+  <rect x="0"  y="0"  width="8" height="8" fill="#2d5a1e"/>
+  <rect x="8"  y="0"  width="8" height="8" fill="#2d5a1e"/>
+  <rect x="16" y="0"  width="8" height="8" fill="#1a3d5c"/>
+  <rect x="24" y="0"  width="8" height="8" fill="#1a3d5c"/>
+  <rect x="0"  y="8"  width="8" height="8" fill="#3d3520"/>
+  <rect x="8"  y="8"  width="8" height="8" fill="#2d5a1e"/>
+  <rect x="16" y="8"  width="8" height="8" fill="#2d5a1e"/>
+  <rect x="24" y="8"  width="8" height="8" fill="#3d3520"/>
+  <rect x="0"  y="16" width="8" height="8" fill="#2d5a1e"/>
+  <rect x="8"  y="16" width="8" height="8" fill="#3d3520"/>
+  <rect x="16" y="16" width="8" height="8" fill="#1a3d5c"/>
+  <rect x="24" y="16" width="8" height="8" fill="#2d5a1e"/>
+  <rect x="0"  y="24" width="8" height="8" fill="#1a3d5c"/>
+  <rect x="8"  y="24" width="8" height="8" fill="#2d5a1e"/>
+  <rect x="16" y="24" width="8" height="8" fill="#3d3520"/>
+  <rect x="24" y="24" width="8" height="8" fill="#2d5a1e"/>
+  <!-- Purple grid lines (matches the app overlay colour) -->
+  <path d="M8 0v32M16 0v32M24 0v32M0 8h32M0 16h32M0 24h32"
+        stroke="#c040ff" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <!-- Outer border -->
+  <rect x="0.5" y="0.5" width="31" height="31"
+        fill="none" stroke="#c040ff" stroke-width="1" opacity="0.35"/>
+</svg>

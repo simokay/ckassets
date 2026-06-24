@@ -1,0 +1,120 @@
+npm verbose cli /Users/simokay/.nvm/versions/node/v24.14.1/bin/node /Users/simokay/.nvm/versions/node/v24.14.1/bin/npm
+npm info using npm@11.11.0
+npm info using node@v24.14.1
+npm verbose title npm install
+npm verbose argv "install" "--build-from-source" "--loglevel" "verbose"
+npm verbose logfile logs-max:10 dir:/Users/simokay/.npm/_logs/2026-05-17T19_39_12_549Z-
+npm verbose logfile /Users/simokay/.npm/_logs/2026-05-17T19_39_12_549Z-debug-0.log
+npm warn Unknown cli config "--build-from-source". This will stop working in the next major version of npm.
+npm http fetch GET 200 https://registry.npmjs.org/opencv4nodejs 440ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/nan 97ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/native-node-utils 189ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/npmlog 200ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/opencv-build 206ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fnode 505ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/undici-types 63ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/are-we-there-yet 80ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/set-blocking 81ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/console-control-strings 89ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/gauge 90ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/wide-align 75ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/delegates 76ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/aproba 81ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/readable-stream 109ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi 111ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/object-assign 68ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/string-width 89ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/signal-exit 192ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/has-unicode 194ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/string_decoder 56ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/inherits 58ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/core-util-is 58ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/process-nextick-args 59ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/util-deprecate 69ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/isarray 81ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/safe-buffer 88ms (cache miss)
+npm http cache https://registry.npmjs.org/strip-ansi 8ms (cache hit)
+npm http fetch GET 200 https://registry.npmjs.org/ansi-regex 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/code-point-at 49ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/number-is-nan 51ms (cache miss)
+npm http cache ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz 0ms (cache hit)
+npm http cache is-fullwidth-code-point@https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz 0ms (cache hit)
+npm http cache code-point-at@https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz 0ms (cache hit)
+npm http cache util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 0ms (cache hit)
+npm http cache string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 0ms (cache hit)
+npm http cache process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 0ms (cache hit)
+npm http cache wide-align@https://registry.npmjs.org/wide-align/-/wide-align-1.1.5.tgz 0ms (cache hit)
+npm http cache inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 0ms (cache hit)
+npm http cache core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 0ms (cache hit)
+npm http cache strip-ansi@https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz 0ms (cache hit)
+npm http cache signal-exit@https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz 0ms (cache hit)
+npm http cache object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 0ms (cache hit)
+npm http cache has-unicode@https://registry.npmjs.org/has-unicode/-/has-unicode-2.0.1.tgz 0ms (cache hit)
+npm http cache aproba@https://registry.npmjs.org/aproba/-/aproba-1.2.0.tgz 0ms (cache hit)
+npm http cache safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 0ms (cache hit)
+npm http cache number-is-nan@https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz 0ms (cache hit)
+npm http cache delegates@https://registry.npmjs.org/delegates/-/delegates-1.0.0.tgz 0ms (cache hit)
+npm http cache readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 0ms (cache hit)
+npm http cache set-blocking@https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz 0ms (cache hit)
+npm http cache gauge@https://registry.npmjs.org/gauge/-/gauge-2.7.4.tgz 0ms (cache hit)
+npm http cache console-control-strings@https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz 0ms (cache hit)
+npm http cache are-we-there-yet@https://registry.npmjs.org/are-we-there-yet/-/are-we-there-yet-1.1.7.tgz 0ms (cache hit)
+npm http cache undici-types@https://registry.npmjs.org/undici-types/-/undici-types-7.24.6.tgz 0ms (cache hit)
+npm http cache opencv-build@https://registry.npmjs.org/opencv-build/-/opencv-build-0.1.9.tgz 0ms (cache hit)
+npm http cache npmlog@https://registry.npmjs.org/npmlog/-/npmlog-4.1.2.tgz 0ms (cache hit)
+npm http cache nan@https://registry.npmjs.org/nan/-/nan-2.27.0.tgz 0ms (cache hit)
+npm http cache native-node-utils@https://registry.npmjs.org/native-node-utils/-/native-node-utils-0.2.7.tgz 0ms (cache hit)
+npm http cache string-width@https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz 0ms (cache hit)
+npm http cache isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 0ms (cache hit)
+npm http cache opencv4nodejs@https://registry.npmjs.org/opencv4nodejs/-/opencv4nodejs-5.6.0.tgz 0ms (cache hit)
+npm http cache @types/node@https://registry.npmjs.org/@types/node/-/node-25.8.0.tgz 0ms (cache hit)
+npm http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz 57ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 62ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 62ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz 62ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 86ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz 107ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/delegates/-/delegates-1.0.0.tgz 107ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz 112ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 118ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 126ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/are-we-there-yet/-/are-we-there-yet-1.1.7.tgz 151ms (cache miss)
+npm warn deprecated are-we-there-yet@1.1.7: This package is no longer supported.
+npm http fetch GET 200 https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz 151ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/gauge/-/gauge-2.7.4.tgz 157ms (cache miss)
+npm warn deprecated gauge@2.7.4: This package is no longer supported.
+npm http fetch GET 200 https://registry.npmjs.org/wide-align/-/wide-align-1.1.5.tgz 159ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz 186ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/npmlog/-/npmlog-4.1.2.tgz 185ms (cache miss)
+npm warn deprecated npmlog@4.1.2: This package is no longer supported.
+npm http fetch GET 200 https://registry.npmjs.org/opencv-build/-/opencv-build-0.1.9.tgz 188ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 191ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz 191ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 197ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/native-node-utils/-/native-node-utils-0.2.7.tgz 197ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/undici-types/-/undici-types-7.24.6.tgz 212ms (cache miss)
+npm http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 227ms
+npm http fetch GET 200 https://registry.npmjs.org/nan/-/nan-2.27.0.tgz 219ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz 232ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 238ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-25.8.0.tgz 369ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/opencv4nodejs/-/opencv4nodejs-5.6.0.tgz 422ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 452ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/has-unicode/-/has-unicode-2.0.1.tgz 455ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/aproba/-/aproba-1.2.0.tgz 492ms (cache miss)
+npm info run opencv-build@0.1.9 install node_modules/opencv-build node ./install.js
+npm info run opencv4nodejs@5.6.0 install node_modules/opencv4nodejs node ./install/install.js
+npm info run opencv-build@0.1.9 install { code: 0, signal: null }
+npm info run opencv4nodejs@5.6.0 install { code: 0, signal: null }
+
+added 31 packages, and audited 32 packages in 4s
+
+found 0 vulnerabilities
+npm verbose cwd /Users/simokay/code/process-maps
+npm verbose os Darwin 25.3.0
+npm verbose node v24.14.1
+npm verbose npm  v11.11.0
+npm verbose exit 0
+npm info ok

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Map Resizer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div id="layout">
+
+    <!-- ── Sidebar ─────────────────────────────────────────────────── -->
+    <aside id="sidebar">
+      <div id="sidebarHead">
+        <span class="sidebar-title">ckassets</span>
+        <button id="sidebarToggle" title="Collapse sidebar">◀</button>
+      </div>
+      <div id="filterWrap">
+        <input id="assetFilter" type="text" placeholder="Filter…" autocomplete="off" spellcheck="false">
+        <div id="assetCount"></div>
+      </div>
+      <div id="assetList"><div id="assetListInner"></div></div>
+    </aside>
+
+    <!-- ── Main ───────────────────────────────────────────────────── -->
+    <main id="main">
+      <h1>Map Resizer</h1>
+
+      <div class="bar" id="controls">
+        <input id="file" type="file" accept="image/*">
+        <button id="openFs">Open file…</button>
+        <button id="process">Process</button>
+        <label>Target cell px <input id="target" type="number" value="70" style="width:56px"></label>
+        <label title="0 = auto-detect">Manual cell px <input id="manualCell" type="number" value="0" min="0" style="width:56px"></label>
+        <div id="status">
+          <span>Grid
+            <input id="manualCols" class="count-input" type="number" min="1" placeholder="—" title="Edit to override detected column count, then Process">
+            ×
+            <input id="manualRows" class="count-input" type="number" min="1" placeholder="—" title="Edit to override detected row count, then Process">
+          </span>
+          <span>Cell <b id="cellSize">—</b> px</span>
+        </div>
+      </div>
+
+      <!-- Calibration bar -->
+      <div class="bar" id="calibBar" style="display:none">
+        <span class="bar-label">Calibrate</span>
+        <button id="calibBtn">Mark cells</button>
+        <input id="calibCols" type="number" value="3" min="1" style="width:38px"> ×
+        <input id="calibRows" type="number" value="3" min="1" style="width:38px"> cells
+        <span id="calibCell" class="dim">drag a region on the image</span>
+        <button id="calibApply" disabled>Apply</button>
+        <button id="calibClear" style="display:none">Clear</button>
+        <div class="sep"></div>
+        <span class="bar-label">Zoom</span>
+        <button id="zoomOut">−</button>
+        <span id="zoomLabel" class="dim" style="min-width:34px;text-align:center">Fit</span>
+        <button id="zoomIn">+</button>
+      </div>
+
+      <!-- Crop bar -->
+      <div class="bar" id="cropBar" style="display:none">
+        <span class="bar-label">Crop</span>
+        <button class="crop-btn" data-side="left">− Left</button>
+        <button class="crop-btn" data-side="top">− Top</button>
+        <button class="crop-btn" data-side="right">− Right</button>
+        <button class="crop-btn" data-side="bottom">− Bottom</button>
+        <span class="dim">1 cell (70 px) per click</span>
+      </div>
+
+      <!-- Grid overlay bar -->
+      <div class="bar" id="gridBar" style="display:none">
+        <span class="bar-label">Grid</span>
+        <button id="gridToggle">Show overlay</button>
+        <label>Cell
+          <input id="gCell" type="number" value="70" min="1" max="500" style="width:52px">
+          <button class="step" data-for="gCell" data-d="-1">−</button><button class="step" data-for="gCell" data-d="1">+</button>
+        </label>
+        <label>Opacity
+          <input id="gOpacity" type="range" min="10" max="100" value="70" style="width:70px">
+          <span id="gOpacityVal">70</span>%
+        </label>
+        <label>X offset
+          <input id="gOffX" type="number" value="0" style="width:52px">
+          <button class="step" data-for="gOffX" data-d="-1">−</button><button class="step" data-for="gOffX" data-d="1">+</button>
+        </label>
+        <label>Y offset
+          <input id="gOffY" type="number" value="0" style="width:52px">
+          <button class="step" data-for="gOffY" data-d="-1">−</button><button class="step" data-for="gOffY" data-d="1">+</button>
+        </label>
+        <button id="gridAutoAlign" title="Detect the grid phase automatically for the current cell size">Auto-align</button>
+        <b id="gCount" class="dim">—</b>
+        <button id="gridCropOffset" title="Remove border pixels defined by the current offset, trimming both sides to the nearest whole cell">Crop offset</button>
+        <button id="gridScale" title="Scale image so the current cell size becomes exactly 70 px">Scale to 70</button>
+      </div>
+
+      <!-- Output bar -->
+      <div class="bar" id="outputBar">
+        <span class="bar-label">Output</span>
+        <label>Quality
+          <input id="quality" type="range" min="50" max="100" value="85" style="width:80px">
+          <span id="qualityVal">85</span>%
+        </label>
+        <a id="download" style="display:none">Download WebP</a>
+        <span id="fmtNote" class="dim"></span>
+        <div class="sep" id="saveSep" style="display:none"></div>
+        <select id="saveFolder" style="display:none">
+          <option value="maps">maps/</option>
+        </select>
+        <div id="nameGroup" style="display:none">
+          <span id="savePrefix"></span>
+          <div id="tagEditor">
+            <div id="tagChips"></div>
+            <input id="tagInput" type="text" placeholder="add tag…" autocomplete="off" spellcheck="false">
+            <ul id="tagDropdown"></ul>
+          </div>
+          <span id="saveSuffix">.webp</span>
+        </div>
+        <button id="saveBtn" style="display:none">Save to ckassets</button>
+        <span id="saveStatus" class="dim"></span>
+      </div>
+
+      <div id="canvasWrap">
+        <canvas id="canvas"></canvas>
+        <canvas id="gridOverlay"></canvas>
+      </div>
+      <pre id="log"></pre>
+    </main>
+
+  </div>
+
+  <script async src="/lib/opencv.js" onload="cvLoaded()"></script>
+  <script src="app.js"></script>
+</body>
+</html>
